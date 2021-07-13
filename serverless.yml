@@ -1,0 +1,38 @@
+service: py-test
+frameworkVersion: '2'
+
+provider:
+  name: aws
+  runtime: python3.8
+  lambdaHashingVersion: 20201221
+  
+functions:
+  consultapropiedades:
+    handler: consultapropiedades.main
+    events:
+      - http:
+          path: /consultapropiedades/
+          method: get
+    environment:
+      USER: UPRSD
+      PASSWORD: UPRSD
+      HOST: UPRSD
+      PORT: UPRSD
+      DATABASE: UPRSD    
+
+  like:
+    handler: like.main
+    events:
+      - http:
+          path: /like/
+          method: post
+    environment:
+      USER: UPRSD
+      PASSWORD: UPRSD
+      HOST: UPRSD
+      PORT: UPRSD
+      DATABASE: UPRSD        
+
+plugins:
+  - serverless-offline
+  - serverless-python-requirements
