@@ -1,8 +1,8 @@
 
 # Creación de apis y microservicios con framework serverless-python
 
-## Installation
-Prerequisito configurar aws cli - https://tinyurl.com/3v8ccr84
+## Instalación
+Prerrequisitos configurar aws cli - https://tinyurl.com/3v8ccr84
 
 Ejecutar el siguiente comando para instalar serverless 
 
