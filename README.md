@@ -1,5 +1,5 @@
 
-# Creacion de apis y microservicios con framework serverless-python
+# Creación de apis y microservicios con framework serverless-python
 
 ## Installation
 Prerequisito configurar aws cli - https://tinyurl.com/3v8ccr84
@@ -10,7 +10,6 @@ Ejecutar el siguiente comando para instalar serverless
 $ npm install -g serverless
 ```
 
-
 ## Establecer las credenciales en el archivo serverless.yml
 ```bash
 USER
@@ -20,7 +19,7 @@ PORT
 DATABASE
 ```
 
-Creacion de entorno virutal para desarrollar los microservicios.
+Creación de entorno virutal para desarrollar los microservicios.
 Referencia: https://tinyurl.com/w7fa6yy8
 
 ```bash
@@ -70,10 +69,11 @@ Se mostraran los endpoints locales para consumirlos
 
 ## Deploy project 
 
-Para realizar la creacion y actualizacion de los endpoints(apigateway) junto con los microservicios(lambda function) y configuraciones como roles politicas etc. 
+Para realizar la creación y actualización de los endpoints(apigateway) junto con los microservicios(lambda function) y configuraciones como roles políticas etc. 
 
 ```bash
 $ serverless deploy
 ```
 
 Esto se crea con el servicio de forma interna de cloudformation. 
+
